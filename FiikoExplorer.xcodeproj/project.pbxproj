@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A39F84B8E2B35C044ABB12D7 /* Pods_FiikoExplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C90B41612C8F57922CB3090 /* Pods_FiikoExplorer.framework */; };
+		C027E3061E92AD4100E989EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E3051E92AD4100E989EA /* AppDelegate.swift */; };
+		C027E3081E92AD4100E989EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E3071E92AD4100E989EA /* ViewController.swift */; };
+		C027E30B1E92AD4100E989EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C027E3091E92AD4100E989EA /* Main.storyboard */; };
+		C027E30D1E92AD4100E989EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C027E30C1E92AD4100E989EA /* Assets.xcassets */; };
+		C027E3101E92AD4100E989EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C027E30E1E92AD4100E989EA /* LaunchScreen.storyboard */; };
+		C027E31F1E92B09600E989EA /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E31C1E92B09600E989EA /* ImageCollectionViewController.swift */; };
+		C027E3201E92B09600E989EA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E31D1E92B09600E989EA /* PhotoCell.swift */; };
+		C027E3211E92B09600E989EA /* PhotosBasedOnSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E31E1E92B09600E989EA /* PhotosBasedOnSearch.swift */; };
+		C027E3241E92B0B800E989EA /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E3231E92B0B800E989EA /* ImageDetailViewController.swift */; };
+		C027E3271E92B15700E989EA /* PhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E3251E92B15700E989EA /* PhotoItem.swift */; };
+		C027E3281E92B15700E989EA /* PhotoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027E3261E92B15700E989EA /* PhotoList.swift */; };
+		C027E32D1E92B2D100E989EA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C027E32B1E92B2D100E989EA /* Fabric.framework */; };
+		C027E32E1E92B2D100E989EA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C027E32C1E92B2D100E989EA /* Crashlytics.framework */; };
+		C0C1A5C01E92B990005FC781 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5BE1E92B990005FC781 /* APIService.swift */; };
+		C0C1A5C11E92B990005FC781 /* StartupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5BF1E92B990005FC781 /* StartupService.swift */; };
+		C0C1A5C31E92B99A005FC781 /* FlickPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5C21E92B99A005FC781 /* FlickPost.swift */; };
+		C0C1A5C61E92B99F005FC781 /* FlickInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5C41E92B99F005FC781 /* FlickInterface.swift */; };
+		C0C1A5CC1E92B9AD005FC781 /* IFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5C81E92B9AD005FC781 /* IFViewModel.swift */; };
+		C0C1A5CD1E92B9AD005FC781 /* DataState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5C91E92B9AD005FC781 /* DataState.swift */; };
+		C0C1A5CF1E92B9AD005FC781 /* FlickViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5CB1E92B9AD005FC781 /* FlickViewModel.swift */; };
+		C0C1A5DF1E92BA71005FC781 /* AFAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5DC1E92BA71005FC781 /* AFAdapter.swift */; };
+		C0C1A5E01E92BA71005FC781 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5DD1E92BA71005FC781 /* Constants.swift */; };
+		C0C1A5E11E92BA71005FC781 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5DE1E92BA71005FC781 /* Utility.swift */; };
+		C0C1A5E41E92BA7C005FC781 /* ExtUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5E21E92BA7C005FC781 /* ExtUIView.swift */; };
+		C0C1A5E51E92BA7C005FC781 /* ExtUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C1A5E31E92BA7C005FC781 /* ExtUIImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		385CCEDA42E3C5706C044465 /* Pods-FiikoExplorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiikoExplorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiikoExplorer/Pods-FiikoExplorer.release.xcconfig"; sourceTree = "<group>"; };
+		9C90B41612C8F57922CB3090 /* Pods_FiikoExplorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FiikoExplorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B4A807362FE154E2BFCF88 /* Pods-FiikoExplorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiikoExplorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FiikoExplorer/Pods-FiikoExplorer.debug.xcconfig"; sourceTree = "<group>"; };
+		C027E3021E92AD4100E989EA /* FiikoExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiikoExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C027E3051E92AD4100E989EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C027E3071E92AD4100E989EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
+		C027E30A1E92AD4100E989EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C027E30C1E92AD4100E989EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C027E30F1E92AD4100E989EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C027E3111E92AD4100E989EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C027E31C1E92B09600E989EA /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		C027E31D1E92B09600E989EA /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C027E31E1E92B09600E989EA /* PhotosBasedOnSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosBasedOnSearch.swift; sourceTree = "<group>"; };
+		C027E3231E92B0B800E989EA /* ImageDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		C027E3251E92B15700E989EA /* PhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoItem.swift; sourceTree = "<group>"; };
+		C027E3261E92B15700E989EA /* PhotoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoList.swift; sourceTree = "<group>"; };
+		C027E32B1E92B2D100E989EA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		C027E32C1E92B2D100E989EA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		C0C1A5BE1E92B990005FC781 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		C0C1A5BF1E92B990005FC781 /* StartupService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartupService.swift; sourceTree = "<group>"; };
+		C0C1A5C21E92B99A005FC781 /* FlickPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickPost.swift; sourceTree = "<group>"; };
+		C0C1A5C41E92B99F005FC781 /* FlickInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickInterface.swift; sourceTree = "<group>"; };
+		C0C1A5C81E92B9AD005FC781 /* IFViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFViewModel.swift; sourceTree = "<group>"; };
+		C0C1A5C91E92B9AD005FC781 /* DataState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataState.swift; sourceTree = "<group>"; };
+		C0C1A5CB1E92B9AD005FC781 /* FlickViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickViewModel.swift; sourceTree = "<group>"; };
+		C0C1A5DC1E92BA71005FC781 /* AFAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFAdapter.swift; sourceTree = "<group>"; };
+		C0C1A5DD1E92BA71005FC781 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C0C1A5DE1E92BA71005FC781 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		C0C1A5E21E92BA7C005FC781 /* ExtUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtUIView.swift; sourceTree = "<group>"; };
+		C0C1A5E31E92BA7C005FC781 /* ExtUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtUIImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C027E2FF1E92AD4100E989EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39F84B8E2B35C044ABB12D7 /* Pods_FiikoExplorer.framework in Frameworks */,
+				C027E32E1E92B2D100E989EA /* Crashlytics.framework in Frameworks */,
+				C027E32D1E92B2D100E989EA /* Fabric.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37350D47C885F7EA9C33B6DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0B4A807362FE154E2BFCF88 /* Pods-FiikoExplorer.debug.xcconfig */,
+				385CCEDA42E3C5706C044465 /* Pods-FiikoExplorer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C027E2F91E92AD4100E989EA = {
+			isa = PBXGroup;
+			children = (
+				C027E3041E92AD4100E989EA /* FiikoExplorer */,
+				C027E3031E92AD4100E989EA /* Products */,
+				37350D47C885F7EA9C33B6DF /* Pods */,
+				F83404466321C240993117F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C027E3031E92AD4100E989EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C027E3021E92AD4100E989EA /* FiikoExplorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C027E3041E92AD4100E989EA /* FiikoExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				C027E32A1E92B2CA00E989EA /* Framework */,
+				C027E31B1E92B09600E989EA /* ImageCollection */,
+				C027E3221E92B0B800E989EA /* ShowImageDetails */,
+				C0C1A5B81E92B989005FC781 /* Interface */,
+				C0C1A5B91E92B989005FC781 /* Models */,
+				C0C1A5BA1E92B989005FC781 /* Service */,
+				C0C1A5BB1E92B989005FC781 /* Utility */,
+				C0C1A5BC1E92B989005FC781 /* ViewControllers */,
+				C0C1A5BD1E92B989005FC781 /* ViewModels */,
+				C027E3051E92AD4100E989EA /* AppDelegate.swift */,
+				C027E3251E92B15700E989EA /* PhotoItem.swift */,
+				C027E3261E92B15700E989EA /* PhotoList.swift */,
+				C027E3091E92AD4100E989EA /* Main.storyboard */,
+				C027E30C1E92AD4100E989EA /* Assets.xcassets */,
+				C027E30E1E92AD4100E989EA /* LaunchScreen.storyboard */,
+				C027E3111E92AD4100E989EA /* Info.plist */,
+			);
+			path = FiikoExplorer;
+			sourceTree = "<group>";
+		};
+		C027E31B1E92B09600E989EA /* ImageCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C027E31C1E92B09600E989EA /* ImageCollectionViewController.swift */,
+				C027E31D1E92B09600E989EA /* PhotoCell.swift */,
+				C027E31E1E92B09600E989EA /* PhotosBasedOnSearch.swift */,
+			);
+			path = ImageCollection;
+			sourceTree = "<group>";
+		};
+		C027E3221E92B0B800E989EA /* ShowImageDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C027E3231E92B0B800E989EA /* ImageDetailViewController.swift */,
+			);
+			path = ShowImageDetails;
+			sourceTree = "<group>";
+		};
+		C027E32A1E92B2CA00E989EA /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				C027E32B1E92B2D100E989EA /* Fabric.framework */,
+				C027E32C1E92B2D100E989EA /* Crashlytics.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		C0C1A5B81E92B989005FC781 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1A5C41E92B99F005FC781 /* FlickInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		C0C1A5B91E92B989005FC781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1A5C21E92B99A005FC781 /* FlickPost.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C0C1A5BA1E92B989005FC781 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1A5BE1E92B990005FC781 /* APIService.swift */,
+				C0C1A5BF1E92B990005FC781 /* StartupService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C0C1A5BB1E92B989005FC781 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1A5DC1E92BA71005FC781 /* AFAdapter.swift */,
+				C0C1A5DD1E92BA71005FC781 /* Constants.swift */,
+				C0C1A5DE1E92BA71005FC781 /* Utility.swift */,
+				C0C1A5E21E92BA7C005FC781 /* ExtUIView.swift */,
+				C0C1A5E31E92BA7C005FC781 /* ExtUIImageView.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C0C1A5BC1E92B989005FC781 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C027E3071E92AD4100E989EA /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C0C1A5BD1E92B989005FC781 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1A5C81E92B9AD005FC781 /* IFViewModel.swift */,
+				C0C1A5C91E92B9AD005FC781 /* DataState.swift */,
+				C0C1A5CB1E92B9AD005FC781 /* FlickViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F83404466321C240993117F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C90B41612C8F57922CB3090 /* Pods_FiikoExplorer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C027E3011E92AD4100E989EA /* FiikoExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C027E3141E92AD4100E989EA /* Build configuration list for PBXNativeTarget "FiikoExplorer" */;
+			buildPhases = (
+				CA109F02BA2A12F1E0C86316 /* [CP] Check Pods Manifest.lock */,
+				C027E2FE1E92AD4100E989EA /* Sources */,
+				C027E2FF1E92AD4100E989EA /* Frameworks */,
+				C027E3001E92AD4100E989EA /* Resources */,
+				C5B230C89673CD3CACA85971 /* [CP] Embed Pods Frameworks */,
+				B396CD8901A0EF94DB1EBE21 /* [CP] Copy Pods Resources */,
+				C027E3291E92B29C00E989EA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiikoExplorer;
+			productName = FiikoExplorer;
+			productReference = C027E3021E92AD4100E989EA /* FiikoExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C027E2FA1E92AD4100E989EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Viraj;
+				TargetAttributes = {
+					C027E3011E92AD4100E989EA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QZ65RGJB4X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C027E2FD1E92AD4100E989EA /* Build configuration list for PBXProject "FiikoExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C027E2F91E92AD4100E989EA;
+			productRefGroup = C027E3031E92AD4100E989EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C027E3011E92AD4100E989EA /* FiikoExplorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C027E3001E92AD4100E989EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C027E3101E92AD4100E989EA /* LaunchScreen.storyboard in Resources */,
+				C027E30D1E92AD4100E989EA /* Assets.xcassets in Resources */,
+				C027E30B1E92AD4100E989EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B396CD8901A0EF94DB1EBE21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiikoExplorer/Pods-FiikoExplorer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C027E3291E92B29C00E989EA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run c71bbf3eb298ad8a6b29782586144d962d6a894b e586be4ea59d608d535b803d0ca0f65acf6ae0f61f010d05591656f2aef08b6c";
+		};
+		C5B230C89673CD3CACA85971 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FiikoExplorer/Pods-FiikoExplorer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA109F02BA2A12F1E0C86316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C027E2FE1E92AD4100E989EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C027E3281E92B15700E989EA /* PhotoList.swift in Sources */,
+				C0C1A5E01E92BA71005FC781 /* Constants.swift in Sources */,
+				C0C1A5CC1E92B9AD005FC781 /* IFViewModel.swift in Sources */,
+				C0C1A5E41E92BA7C005FC781 /* ExtUIView.swift in Sources */,
+				C0C1A5C61E92B99F005FC781 /* FlickInterface.swift in Sources */,
+				C027E3271E92B15700E989EA /* PhotoItem.swift in Sources */,
+				C027E3201E92B09600E989EA /* PhotoCell.swift in Sources */,
+				C0C1A5C11E92B990005FC781 /* StartupService.swift in Sources */,
+				C0C1A5DF1E92BA71005FC781 /* AFAdapter.swift in Sources */,
+				C0C1A5E51E92BA7C005FC781 /* ExtUIImageView.swift in Sources */,
+				C0C1A5CF1E92B9AD005FC781 /* FlickViewModel.swift in Sources */,
+				C027E3241E92B0B800E989EA /* ImageDetailViewController.swift in Sources */,
+				C027E31F1E92B09600E989EA /* ImageCollectionViewController.swift in Sources */,
+				C027E3081E92AD4100E989EA /* ViewController.swift in Sources */,
+				C0C1A5E11E92BA71005FC781 /* Utility.swift in Sources */,
+				C027E3211E92B09600E989EA /* PhotosBasedOnSearch.swift in Sources */,
+				C0C1A5C01E92B990005FC781 /* APIService.swift in Sources */,
+				C0C1A5CD1E92B9AD005FC781 /* DataState.swift in Sources */,
+				C027E3061E92AD4100E989EA /* AppDelegate.swift in Sources */,
+				C0C1A5C31E92B99A005FC781 /* FlickPost.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C027E3091E92AD4100E989EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C027E30A1E92AD4100E989EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C027E30E1E92AD4100E989EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C027E30F1E92AD4100E989EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C027E3121E92AD4100E989EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C027E3131E92AD4100E989EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C027E3151E92AD4100E989EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B4A807362FE154E2BFCF88 /* Pods-FiikoExplorer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QZ65RGJB4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FiikoExplorer/Framework",
+				);
+				INFOPLIST_FILE = FiikoExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mspviraj.FiikoExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C027E3161E92AD4100E989EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385CCEDA42E3C5706C044465 /* Pods-FiikoExplorer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QZ65RGJB4X;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FiikoExplorer/Framework",
+				);
+				INFOPLIST_FILE = FiikoExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mspviraj.FiikoExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C027E2FD1E92AD4100E989EA /* Build configuration list for PBXProject "FiikoExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C027E3121E92AD4100E989EA /* Debug */,
+				C027E3131E92AD4100E989EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C027E3141E92AD4100E989EA /* Build configuration list for PBXNativeTarget "FiikoExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C027E3151E92AD4100E989EA /* Debug */,
+				C027E3161E92AD4100E989EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C027E2FA1E92AD4100E989EA /* Project object */;
+}
